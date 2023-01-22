@@ -10,12 +10,6 @@ public class TripBooking {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int tripBookingid;
 
-    public TripBooking(String fromLocation, String toLocation, int distanceInKm, TripStatus tripStatus) {
-        this.fromLocation = fromLocation;
-        this.toLocation = toLocation;
-        this.distanceInKm = distanceInKm;
-        this.tripStatus = tripStatus;
-    }
 
     private String fromLocation;
 
@@ -99,4 +93,13 @@ public class TripBooking {
         this.driver = driver;
     }
 
+    public TripBooking(String fromLocation,String toLocation,int distanceInKm,TripStatus tripStatus) {
+        this.fromLocation = fromLocation;
+        this.toLocation = toLocation;
+        this.distanceInKm = distanceInKm;
+        this.tripStatus = tripStatus;
+    }
+
+    public TripBooking() {
+    }
 }

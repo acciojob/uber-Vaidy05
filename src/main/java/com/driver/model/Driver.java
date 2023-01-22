@@ -3,6 +3,7 @@ package com.driver.model;
 import javax.persistence.*;
 import java.util.List;
 
+
 @Table
 @Entity
 public class Driver {
