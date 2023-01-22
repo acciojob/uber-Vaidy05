@@ -74,7 +74,7 @@ public class CustomerServiceImpl implements CustomerService {
 
 		tripBookingRepository2.save(trip);
         customerRepository2.save(customer);
-
+        driverRepository2.save(driver);
 		return trip;
 
 	}
