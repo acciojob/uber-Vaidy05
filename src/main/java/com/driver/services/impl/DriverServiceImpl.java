@@ -25,13 +25,13 @@ public class DriverServiceImpl implements DriverService {
 		Driver driver = new Driver(mobile,password);
 		driver.setCab(cab);
 		driverRepository3.save(driver);
-		cabRepository3.save(cab);
 	}
 
 	@Override
 	public void removeDriver(int driverId){
 		// Delete driver without using deleteById function
-        driverRepository3.deleteById(driverId);
+        Driver driver = driverRepository3.findById(driverId).get();
+		driverRepository3.delete(driver);
 	}
 
 	@Override
