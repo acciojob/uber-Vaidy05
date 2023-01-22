@@ -19,6 +19,9 @@ public class Cab{
     @JoinColumn
     private Driver driver;
 
+    public Cab() {
+    }
+
     public Cab(int perKmrate, boolean available) {
         this.perKmrate = perKmrate;
         this.available = available;
@@ -32,15 +35,15 @@ public class Cab{
         this.id = id;
     }
 
-    public int getPerKmrate() {
+    public int getPerKmRate() {
         return perKmrate;
     }
 
-    public void setPerKmrate(int perKmrate) {
+    public void setPerKmRate(int perKmrate) {
         this.perKmrate = perKmrate;
     }
 
-    public boolean isAvailable() {
+    public boolean getAvailable() {
         return available;
     }
 

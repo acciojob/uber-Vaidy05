@@ -18,11 +18,11 @@ public class Customer {
      @OneToMany(mappedBy = "customer",cascade = CascadeType.ALL)
      private List<TripBooking> tripBookingList;
 
-     public int getId() {
+     public int getCustomerId() {
           return id;
      }
 
-     public void setId(int id) {
+     public void setCustomerId(int id) {
           this.id = id;
      }
 

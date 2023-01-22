@@ -37,11 +37,11 @@ public class Driver {
         this.password = password;
     }
 
-    public int getId() {
+    public int getDriverId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setDriverId(int id) {
         this.id = id;
     }
 
